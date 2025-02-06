@@ -1,0 +1,69 @@
+body{
+height: 400vh;
+overflow-x:hidden ;
+margin: 0;
+}
+
+.textdiv1{
+max-width: 50rem;
+margin-inline: auto;
+padding-inline: 1rem;
+top: 80px;
+position: relative;
+}
+
+.title1{
+font-size: 50px;
+text-align: center;
+font-family: svist;
+}
+
+.text1{
+font-size: medium;
+font-family: svist;
+text-align: center;
+top: -20px;
+position: relative;
+
+}
+
+.svistobraz{
+position: relative;
+display: flex;
+justify-content: center;
+top: 100px;
+}
+
+.svistobraz img{
+border-radius: 20px;
+width: 200px;
+transition: 0.7s;
+
+}
+
+.svistobraz img:hover{
+transform: scale(1.1);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+html{
+scroll-behavior: smooth;
+color-scheme: dark light;
+}
+
+@font-face {
+    font-family:svist ;
+    src: url(/Lexend-Regular.ttf);
+}
