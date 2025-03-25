@@ -1,7 +1,9 @@
 body{
-height: 400vh;
+height: 100vh;
 overflow-x:hidden ;
 margin: 0;
+background-image:url(images/vecteezy_vector-abstract-background-with-soft-gradient-color-and_6849737.jpg);
+background-repeat: no-repeat;
 }
 
 .textdiv1{
@@ -47,17 +49,6 @@ transform: scale(1.1);
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
 html{
 scroll-behavior: smooth;
 color-scheme: dark light;
@@ -67,3 +58,37 @@ color-scheme: dark light;
     font-family:svist ;
     src: url(/Lexend-Regular.ttf);
 }
+
+
+.seal15{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+}
+
+.seal15 img:hover{
+    transform: scale(1.1);
+    
+    
+ }
+
+
+
+ .seal15 img{
+    border-radius: 20px;
+    width: 200px;
+    transition: 0.7s;
+    
+    }
+    
+
+        
+
+
+
+
+
+
+
+
