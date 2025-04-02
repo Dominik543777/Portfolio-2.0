@@ -29,25 +29,6 @@ position: relative;
 
 }
 
-.svistobraz{
-position: relative;
-display: flex;
-justify-content: center;
-top: 100px;
-}
-
-.svistobraz img{
-border-radius: 20px;
-width: 200px;
-transition: 0.7s;
-
-}
-
-.svistobraz img:hover{
-transform: scale(1.1);
-
-
-}
 
 html{
 scroll-behavior: smooth;
