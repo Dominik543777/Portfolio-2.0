@@ -1,0 +1,58 @@
+.projekt1{
+    top: -35%;
+    transform: scale(0.2);
+    position: fixed;
+    left: -40%;
+    display: flex;
+    border-radius: 100px;
+}
+
+.projekt1 img{
+    border-radius: 60px;
+    transition: 0.7s;
+    }
+
+
+    .projekt1 img:hover{
+        transform: scale(1.1);
+        
+        
+     }
+
+
+
+
+.textprojekt1{
+position: fixed;
+top: 41%;
+left: 6%;
+}
+
+.textprojekt2{
+    position: fixed;
+    top: 39%;
+    left: 6%;
+    
+}
+
+.textprojekt3{
+    font-family: svist;
+ 
+}
+
+
+.git-hubtl{
+position: relative;
+top: 42%;
+left: -29%;
+transform: scale(0.2);
+
+}
+
+.git{
+    width: 80px; /* Or whatever size looks good */
+  height: auto;
+  border-radius: 80px; /* Optional: smooth corners */
+  transition: transform 0.3s ease;
+  cursor: pointer; 
+}

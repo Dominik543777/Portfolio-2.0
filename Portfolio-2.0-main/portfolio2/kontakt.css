@@ -1,0 +1,29 @@
+.kont{
+ position: fixed;
+ left: 2%;
+ bottom: 70%;
+}
+
+
+.textdiv13{
+position: fixed;
+left: 2%;
+bottom: 80%;
+}
+
+
+.git2{
+    position: relative;
+    width: 25px; /* Or whatever size looks good */
+    height: auto;
+    border-radius: 25px; /* Optional: smooth corners */
+ 
+   
+}
+
+.git-hubtl2{
+ position: fixed;
+top: 25%;
+left: 7.5%;
+
+}
