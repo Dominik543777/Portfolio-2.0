@@ -11,17 +11,98 @@
     <link rel="stylesheet" href="projekty.css">
     <link rel="stylesheet" href="projekty.html">
     <link rel="stylesheet" href="kontakt.html">
+    <link rel="stylesheet" href="index.js">
     <title>Document</title>
 </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secret DOOM</title>
+  <style>
+    /* Normal page styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #fff;
+      transition: background 0.5s ease;
+    }
+    
+    /* DOOM button – hidden by default and fixed to the viewport */
+    #secretButton {
+      display: none;
+      position: fixed;
+      top: 20px;        /* always 20px from the top */
+      right: 20px;      /* always 20px from the right */
+      width: 80px;
+      height: 30px;
+      padding: 5px 8px;
+      font-size: 10px;
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 100;
+    }
+    
+    /* Normal portfolio content */
+    #mainContent {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    
+    /* DOOM mode styles */
+    .doom-mode {
+      background-color: black;
+      background-image: url('/images/ghetto.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    
+    /* Hide mainContent and show DOOM button in DOOM mode */
+    .doom-mode #mainContent {
+      display: none;
+    }
+    
+    .doom-mode #secretButton {
+      display: inline-block;
+    }
+  </style>
+</head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <a class="active" href="index.html">Domov</a>
-            <a href="projekty.html">Projekty</a>
-            <a href="kontakt.html">Kontakt</a>
-        </ul>
-    </nav>
-    <section>
+  <!-- The DOOM button appears only when DOOM mode is active -->
+  <button id="secretButton">Play DOOM</button>
+  
+  <!-- Main portfolio content -->
+  <div id="mainContent">
+        <section>
         <div class="textdiv1">
             <h4 class="title1">Vítejte v mém portfoliu</h4>
             <p class="text1">Portfolio Dominik Kozmík</p>
@@ -33,6 +114,116 @@
             <img src="images/sealthedeal.gif" alt="">
         </div>
     </section>
+  </div>
+  
+  <!-- DOOM theme music -->
+  <audio id="doomMusic" src="/souds/Doom OST - E1M1 - At Doom's Gate [BSsfjHCFosw].mp3" preload="auto"></audio>
+  
+  <script>
+    // Define the secret (Konami) sequence
+    const secretSequence = [
+      "ArrowUp", "ArrowUp",
+      "ArrowDown", "ArrowDown",
+      "ArrowLeft", "ArrowRight",
+      "ArrowLeft", "ArrowRight"
+    ];
+    let inputSequence = [];
+    let doomActivated = false; // Only active during the current page session
+
+    // Get reference to the DOOM button and audio elements
+    const secretButton = document.getElementById("secretButton");
+    const doomMusic = document.getElementById("doomMusic");
+
+    // Listen for keydown events to detect the secret sequence
+    window.addEventListener("keydown", (event) => {
+      if (doomActivated) return; // Prevent reactivation if already active
+      
+      inputSequence.push(event.key);
+      if (inputSequence.length > secretSequence.length) {
+        inputSequence.shift(); // Remove the oldest key press
+      }
+
+      // Compare the input sequence to the secret sequence
+      if (JSON.stringify(inputSequence) === JSON.stringify(secretSequence)) {
+        doomActivated = true;
+        document.body.classList.add("doom-mode");
+
+        // Attempt to play DOOM music (browsers may require user interaction)
+        doomMusic.play().catch((e) => {
+          console.log("User interaction required to play music:", e);
+        });
+      }
+    });
+    
+    // Redirect when the DOOM button is clicked
+    secretButton.addEventListener("click", () => {
+      window.location.href = "https://thedoggybrad.github.io/doom_on_js-dos/";
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <a class="active" href="index.html">Domov</a>
+            <a href="projekty.html">Projekty</a>
+            <a href="kontakt.html">Kontakt</a>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>

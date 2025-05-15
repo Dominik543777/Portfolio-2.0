@@ -10,8 +10,10 @@ background-repeat: no-repeat;
 max-width: 50rem;
 margin-inline: auto;
 padding-inline: 1rem;
-top: 80px;
-position: relative;
+top: 10%;
+position: fixed;
+text-align: center;
+left: 28%;
 }
 
 .title1{
@@ -42,10 +44,11 @@ color-scheme: dark light;
 
 
 .seal15{
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: center;
-    top: 100px;
+    top: 50%;
+    left: 42%;
 }
 
 .seal15 img:hover{
@@ -73,12 +76,83 @@ color-scheme: dark light;
 
 
 
+#secretButton {
+  display: none;
+  width: 80px;
+  height: 30px;
+  padding: 5px 8px;
+  font-size: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed; /* This ensures it stays put */
+  top: 20px;  /* Adjust this to your preferred location */
+  right: 20px; /* Adjust this to keep the button consistent */
+  z-index: 100;
+}
 
 
 
 
 
 
+
+
+
+
+    #secretButton {
+  position: fixed; /* or absolute if needed */
+  top: 80%;
+  left: 45%;
+  z-index: 9999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#secretButton {
+  display: none; /* hidden by default */
+  position: fixed; /* stays in the same place in the viewport */
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  height: 30px;
+  padding: 5px 8px;
+  font-size: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* DOOM mode styles */
+.doom-mode {
+  background-color: black;
+  background-image: url('1fd478ef-43aa-445a-a4df-03cf91a21427.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+  
+.doom-mode #mainContent {
+  display: none;
+}
+  
+.doom-mode #secretButton {
+  display: inline-block;
+}
 
 
 
