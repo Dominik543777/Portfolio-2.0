@@ -1,38 +1,10 @@
 
-.textprojekt1{
-position: fixed;
-top: 41%;
-left: 6%;
-}
-
-.textprojekt2{
-    position: fixed;
-    top: 39%;
-    left: 6%;
-    
-}
-
-.textprojekt3{
-    font-family: svist;
- 
-}
 
 
-.git-hubtl{
-position: relative;
-top: 42%;
-left: -29%;
-transform: scale(0.2);
 
-}
 
-.git{
-    width: 80px; 
-  height: auto;
-  border-radius: 80px; 
-  transition: transform 0.3s ease;
-  cursor: pointer; 
-}
+
+
 
 
 
@@ -43,6 +15,7 @@ transform: scale(0.2);
     width: 300px;
     height: 200px;
     object-fit: cover;
+    
   }
   
   .flip-card-inner {
@@ -87,13 +60,62 @@ transform: scale(0.2);
   .flip-card-front img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This makes sure it scales exactly like the back */
+    object-fit: cover;
   }
 
 
 
 
+.projekty{
+  top: 60px;
+  position: relative;
+  margin: 0 200px 0 200px;
+  flex-direction: row;
+ justify-content: center;
+  display: flex;
+  gap: 150px;
+
+}
 
 
+#ob1{
+   border-radius: 20px;
+  width: 220px;
+  
+}
 
+#ob2{
+ border-radius: 20px;
+  width: 300px;
+  
+}
 
+.motor::before{
+  content: 'Toto byl projekt ve photoshopu na práci s osvětlením';
+  color: white;
+  font-family: Light;
+  position: absolute;
+  top: 300px;
+  width: 220px;
+  text-align: center;
+}
+
+.bliss::before{
+  content: 'Tohle byl projekt ve photoshopu koláž';
+  color: white;
+  font-family: Light;
+  position: absolute;
+  top: 220px;
+  width: 220px;
+  text-align: right;
+}
+
+.flip-card::before{
+  content: 'Tohle byl skupinový projekt.Byl jsem v něm prográmátor';
+  color: white;
+  font-family: Light;
+  position: absolute;
+  top: 220px;
+  width: 300px;
+  text-align: left;
+}
