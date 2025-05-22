@@ -1,0 +1,206 @@
+body{
+background-color:rgb(7, 7, 7); ;
+height: 170vh;
+}
+:root{
+  --color:rgb(7, 7, 7);
+}    
+
+
+.title{
+  position: relative;
+  text-align: center;
+  font-size: 150px;
+  font-family: Gen;
+  top: 30px;
+  @supports (background-clip:text) or (-webkit-background-clip:text) {
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-image: url(/images/pepa_konidal.jpg);
+      background-size: cover;
+      background-position: center;
+}
+   text-transform: uppercase;
+
+}
+
+
+.line{
+position: relative;
+height: 4px;
+width: 100%;
+   background-image: url(/images/pepa_konidal.jpg);
+      background-size: cover;
+      background-position: center;
+top: 230px;
+}
+
+.text_omne{
+  font-family: Light;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.text_pod_carou{
+  position: relative;
+  font-family: Light;
+  font-size: 60px;
+  color: white;
+  top: 120px;
+   text-align: center;
+}
+
+
+
+
+.sloupce-container{
+  position: relative;
+  color: white;
+  font-family: Light;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 140px;
+  gap: 30px;
+  margin: 0 200px 0 200px;
+  font-size: 20px;
+}
+
+.sloupce p:nth-child(1){
+font-size: 30px;
+}
+
+.line2{
+position: relative;
+height: 2px;
+background-color: white;
+ width: 500px;  
+top: 150px;
+ margin: 0 200px 0 200px;
+ display: flex;
+ justify-self: center;
+}
+
+
+.jazyky{
+  font-family: Light;
+  
+  color: white;
+  position: absolute;
+  top: 900px;
+  left: 30%;
+}
+
+
+.kontakt{
+  font-family: Light;
+  color: white;
+  position: absolute;
+  top: 900px;
+  left: 53%;
+}
+
+
+
+#secretButton {
+  display: none;
+  width: 80px;
+  height: 30px;
+  padding: 5px 8px;
+  font-size: 10px;
+  background: red;
+  color: white;
+  cursor: pointer;
+  position: fixed; 
+  left: 60%; 
+  z-index: 100;
+  top: 1.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DOOM mode styles */
+.doom-mode {
+  background-color: black;
+  background-image: url('1fd478ef-43aa-445a-a4df-03cf91a21427.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+  
+.doom-mode #mainContent {
+  display: none;
+}
+  
+.doom-mode #secretButton {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family:Gen ;
+  src: url(/fonty/GeneralSans-Bold.otf);
+}
+
+
+@font-face {
+  font-family: Light;
+  src: url(/fonty/GeneralSans-Light.otf);
+}
