@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <link rel="website icon"
+    type="png" href="images/seal.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="projekty.css">
+ 
+    <title>Document</title>
+</head>
+
+
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secret DOOM</title>
+  <style>
+
+    
+    /* DOOM button – hidden by default and fixed to the viewport */
+ 
+  
+    
+    /* DOOM mode styles */
+    .doom-mode {
+      position: absolute;
+      background-image: url('/images/ghetto.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      z-index: 20;
+    }
+    
+    /* Hide mainContent and show DOOM button in DOOM mode */
+    .doom-mode #mainContent {
+      display: none;
+    }
+    
+    .doom-mode #secretButton {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <!-- The DOOM button appears only when DOOM mode is active -->
+  <button id="secretButton">Play DOOM</button>
+  
+  <!-- Main portfolio content -->
+  <div id="mainContent">
+ 
+<div class="title">Dominik Kozmík</div>
+
+<div class="line"></div>
+
+
+
+<div class="text_omne"  >
+<p>Jsem student na střední škole Baltaci v prním rořníku jsem začátečník v programování a snažím se v tom zlepšovat</p>
+</div>
+
+
+<div class="text_pod_carou" >
+<p>Moje zkušenosti</p>
+</div>
+
+<div class="sloupce-container">
+
+
+
+    
+  <div class="sloupce"  id="slo1">
+    <p>Html</p>
+    <p>Moje zkušenosti v html nejsou nějak velké ale pár stránek už jsem vytvořil</p>
+  </div>
+
+
+
+
+  <div class="sloupce"  id="slo2">
+  <p>Css</p>
+  <p>Moc velký grafik asi ze mně nikdy nebude ale snažím jse aby to nevypadalo jak Lukovsky septik</p>
+  </div>
+
+
+
+
+
+  <div class="sloupce"  id="slo3">
+  <p>Photoshop</p>
+  <p>Ve photoshopu nejsem moc dobrý ale ne úpně špatný základy mám a něco tam dokážu vytvořit</p>
+  </div>
+
+
+
+
+
+  <div class="sloupce"  id="slo4">
+<p>Fyzika</p>
+<p>Momentálně bojuji o přežití v tomhle drsném předmětu</p>
+  </div>
+
+
+
+
+</div>
+
+
+<div class="line2"></div>
+
+
+
+<div class="jazyky"  >
+  <H1>Jazyky</H1>
+<p>Angličtina-V tomhle jazyce jsem honě zkušený</p>
+<p>Čeština-Můj rodný jazyk bohaté zkušenosti</p>
+<p>Ruština-Totální začátečník</p>
+</div>
+
+
+
+<div class="kontakt" >
+<h1>Kontakt</h1>
+<p>GitHub:Dominik54377</p>
+<a href="/kontakt/index2.html">Kontaktujte mě</a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+  <!-- DOOM theme music -->
+  <audio id="doomMusic" src="/souds/Doom OST - E1M1 - At Doom's Gate [BSsfjHCFosw].mp3" preload="auto"></audio>
+  
+  <script>
+    // Define the secret (Konami) sequence
+    const secretSequence = [
+      "ArrowUp", "ArrowUp",
+      "ArrowDown", "ArrowDown",
+      "ArrowLeft", "ArrowRight",
+      "ArrowLeft", "ArrowRight"
+    ];
+    let inputSequence = [];
+    let doomActivated = false; // Only active during the current page session
+
+    // Get reference to the DOOM button and audio elements
+    const secretButton = document.getElementById("secretButton");
+    const doomMusic = document.getElementById("doomMusic");
+
+    // Listen for keydown events to detect the secret sequence
+    window.addEventListener("keydown", (event) => {
+      if (doomActivated) return; // Prevent reactivation if already active
+      
+      inputSequence.push(event.key);
+      if (inputSequence.length > secretSequence.length) {
+        inputSequence.shift(); // Remove the oldest key press
+      }
+
+      // Compare the input sequence to the secret sequence
+      if (JSON.stringify(inputSequence) === JSON.stringify(secretSequence)) {
+        doomActivated = true;
+        document.body.classList.add("doom-mode");
+
+        // Attempt to play DOOM music (browsers may require user interaction)
+        doomMusic.play().catch((e) => {
+          console.log("User interaction required to play music:", e);
+        });
+      }
+    });
+    
+    // Redirect when the DOOM button is clicked
+    secretButton.addEventListener("click", () => {
+      window.location.href = "https://thedoggybrad.github.io/doom_on_js-dos/";
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <a class="active" href="index.html">Domov</a>
+            <a href="projekty.html">Projekty</a>
+          
+        </ul>
+    </nav>
+
+
+
+
+
+</body>
+</html>

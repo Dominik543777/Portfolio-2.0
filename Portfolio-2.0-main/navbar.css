@@ -1,0 +1,39 @@
+.navbar{
+
+position: fixed;
+background-color: black;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 10;
+text-align: center;
+height: 55px;
+}
+
+.navbar a{
+color: white;
+text-decoration: none;
+font-family: Light;
+padding: 10px 20px;
+  border-radius: 5px;  
+transition: 0.5s;
+font-size: px;
+}
+
+.navbar a:hover{
+background-color: white;
+color: black;
+
+
+}
+.navbar a.active{
+background-color: rgb(68, 68, 81);
+color: white;
+}
+
+
+
+@font-face {
+  font-family: Light;
+  src: url(/fonty/GeneralSans-Light.otf);
+}
