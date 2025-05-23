@@ -1,5 +1,5 @@
 body{
-background-color:rgb(7, 7, 7); ;
+background-color:rgb(7, 7, 7) !important;
 height: 170vh;
 }
 :root{
@@ -63,7 +63,7 @@ top: 230px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  top: 140px;
+  top: 260px;
   gap: 30px;
   margin: 0 200px 0 200px;
   font-size: 20px;
@@ -78,7 +78,7 @@ position: relative;
 height: 2px;
 background-color: white;
  width: 500px;  
-top: 150px;
+top: 280px;
  margin: 0 200px 0 200px;
  display: flex;
  justify-self: center;
@@ -90,7 +90,7 @@ top: 150px;
   
   color: white;
   position: absolute;
-  top: 900px;
+  top: 1000px;
   left: 30%;
 }
 
@@ -99,11 +99,18 @@ top: 150px;
   font-family: Light;
   color: white;
   position: absolute;
-  top: 900px;
+  top: 1000px;
   left: 53%;
 }
 
-
+.kontakt a{
+  display: flex;
+  color: white;
+  gap: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
 
 #secretButton {
   display: none;

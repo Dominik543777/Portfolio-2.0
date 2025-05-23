@@ -12,7 +12,7 @@ if (JSON.stringify(inputSequence) === JSON.stringify(secretSequence)) {
   document.body.style.backgroundSize = "cover";
   document.body.style.backgroundPosition = "center";
   document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.height = "100vh"; // Ensures it fills the screen
+ 
 
 
 
