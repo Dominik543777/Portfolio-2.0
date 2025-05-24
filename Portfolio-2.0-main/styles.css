@@ -41,6 +41,7 @@ top: 230px;
   color: white;
   font-size: 30px;
   text-align: center;
+
 }
 
 
@@ -63,7 +64,7 @@ top: 230px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  top: 260px;
+  top: 150px;
   gap: 30px;
   margin: 0 200px 0 200px;
   font-size: 20px;
@@ -78,39 +79,14 @@ position: relative;
 height: 2px;
 background-color: white;
  width: 500px;  
-top: 280px;
+top: 160px;
  margin: 0 200px 0 200px;
  display: flex;
  justify-self: center;
 }
 
 
-.jazyky{
-  font-family: Light;
-  
-  color: white;
-  position: absolute;
-  top: 1000px;
-  left: 30%;
-}
 
-
-.kontakt{
-  font-family: Light;
-  color: white;
-  position: absolute;
-  top: 1000px;
-  left: 53%;
-}
-
-.kontakt a{
-  display: flex;
-  color: white;
-  gap: 10px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-}
 
 #secretButton {
   display: none;
@@ -130,23 +106,27 @@ top: 280px;
 
 
 
+.sloupce-container2{
+  position: relative;
+  color: white;
+  font-family: Light;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 150px;
+  gap: 30px;
+  margin: 0 200px 0 200px;
+  font-size: 20px;
+  
+}
 
+.sloupce2 p:nth-child(1){
+font-size: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.button{
+  color: white;
+}
 
 /* DOOM mode styles */
 .doom-mode {
@@ -179,6 +159,60 @@ top: 280px;
 
 
 
+/* Smartphones (portrait) */
+@media (max-width: 576px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .line {
+    top: 100px;
+   
+    margin-top: 30px;
+  }
+
+  .text_pod_carou {
+    font-size: 30px;
+    top: 60px;
+  }
+
+  .text_omne {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  .sloupce-container {
+    flex-direction: column;
+    margin: 0 20px;
+    font-size: 16px;
+    gap: 15px;
+    top: 100px;
+  }
+
+  .line2 {
+    width: 90%;
+    top: 120px;
+    margin: 0 auto;
+  }
+
+    .sloupce-container2{
+    flex-direction: column;
+    margin: 0 20px;
+    font-size: 16px;
+    gap: 15px;
+    top: 100px;
+  }
+
+  
+
+  #secretButton {
+    width: 60px;
+    height: 25px;
+    font-size: 8px;
+    top: 10px;
+    left: 10px;
+  }
+}
 
 
 
@@ -191,11 +225,6 @@ top: 280px;
 
 
   
-
-
-
-
-
 
 
 

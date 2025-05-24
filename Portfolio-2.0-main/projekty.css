@@ -98,6 +98,7 @@
   top: 300px;
   width: 220px;
   text-align: center;
+  
 }
 
 .bliss::before{
@@ -119,3 +120,120 @@
   width: 300px;
   text-align: left;
 }
+
+
+
+
+
+
+
+
+
+/* Stack images vertically on smaller screens with more space */
+@media (max-width: 1530px) {
+    .projekty {
+        flex-direction: column; /* Changes layout to vertical */
+        align-items: center;
+        gap: 80px; /* Extra space between stacked images */
+    }
+
+    #ob1, #ob2 {
+        max-width: 250px; /* Adjusts size to fit better */
+    }
+
+.motor::before, 
+    .bliss::before, 
+    .flip-card::before {
+        display: block;
+        text-align: center;
+        font-size: 20px; /* Larger for readability */
+        margin-top: 15px; /* Ensures proper spacing under images */
+        width: 90%;
+        position: static; /* Prevents overlapping issues */
+    }
+    
+
+
+
+}
+
+
+
+@media (max-width: 1400px) {
+    .projekty {
+        flex-direction: column; /* Changes layout to vertical */
+        align-items: center;
+        gap: 80px; /* Extra space between stacked images */
+    }
+
+    #ob1, #ob2 {
+        max-width: 250px; /* Adjusts size to fit better */
+    }
+
+    .motor::before, 
+    .bliss::before, 
+    .flip-card::before {
+        display: block;
+        text-align: center;
+        font-size: 20px; /* Larger for readability */
+        margin-top: 15px; /* Ensures proper spacing under images */
+        width: 90%;
+        position: static; /* Prevents overlapping issues */
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/* Stack images vertically on smaller screens with more space */
+@media (max-width: 900px) {
+    .projekty {
+        flex-direction: column; /* Changes layout to vertical */
+        align-items: center;
+        gap: 80px; /* Extra space between stacked images */
+    }
+
+    #ob1, #ob2 {
+        max-width: 250px; /* Adjusts size to fit better */
+    }
+
+    .motor::before, 
+    .bliss::before, 
+    .flip-card::before {
+        display: block;
+        text-align: center;
+        font-size: 20px; /* Larger for readability */
+        margin-top: 15px; /* Ensures proper spacing under images */
+        width: 90%;
+        position: static; /* Prevents overlapping issues */
+    }
+
+
+
+}
+
+@media (max-width: 600px) {
+    .projekty {
+        gap: 80px; /* More space between stacked sections */
+    }
+
+    .motor::before, 
+    .bliss::before, 
+    .flip-card::before {
+        font-size: 22px;
+        margin-top: 20px; /* Extra padding beneath images */
+        width: 100%;
+    }
+}
+
+
+
+
+
