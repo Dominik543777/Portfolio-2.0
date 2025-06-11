@@ -91,7 +91,7 @@
 }
 
 .motor::before{
-  content: 'Toto byl projekt ve photoshopu na práci s osvětlením';
+  content: 'Projekt ve photoshopu na práci s osvětlením';
   color: white;
   font-family: Light;
   position: absolute;
@@ -102,7 +102,7 @@
 }
 
 .bliss::before{
-  content: 'Tohle byl projekt ve photoshopu koláž';
+  content: 'Projekt ve photoshopu koláž';
   color: white;
   font-family: Light;
   position: absolute;
@@ -112,7 +112,7 @@
 }
 
 .flip-card::before{
-  content: 'Tohle byl skupinový projekt.Byl jsem v něm prográmátor';
+  content: 'Skupinový projekt.Byl jsem v něm prográmátor';
   color: white;
   font-family: Light;
   position: absolute;
@@ -232,6 +232,8 @@
         width: 100%;
     }
 }
+
+
 
 
 

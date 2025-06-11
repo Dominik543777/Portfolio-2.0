@@ -10,7 +10,7 @@ height: 170vh;
 .title{
   position: relative;
   text-align: center;
-  font-size: 150px;
+  font-size: 210px;
   font-family: Gen;
   top: 30px;
   @supports (background-clip:text) or (-webkit-background-clip:text) {
@@ -146,6 +146,51 @@ font-size: 30px;
 }
 
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden; /* Prevents extra scrolling space */
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto; /* Pushes the footer down */
+}
+
+
+
+.button2 {
+    color: white;
+    text-decoration: none; /* Removes underline */
+    font-size: 16px; /* Adjusts text size */
+    padding: 10px 15px; /* Adds spacing for better clickability */
+    border-radius: 5px; /* Slightly rounded edges */
+    background-color: #444; /* Subtle background color */
+}
+
+.button2:hover {
+    background-color: #555; /* Darker shade when hovering */
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -213,8 +258,6 @@ font-size: 30px;
     left: 10px;
   }
 }
-
-
 
 
 
